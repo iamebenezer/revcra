@@ -106,7 +106,7 @@
                 </h1>
 
                 <div class="main__content">
-                    <img src="img/poster.png" style="width: 50px;" alt="bg" class="main__bg">
+                    <!-- <img src="img/poster.png" style="width: 50px;" alt="bg" class="main__bg"> -->
 
                     <div class="main__text--inner">
                         <p class="main__text" style=" font-family: texts;"> 
@@ -129,8 +129,22 @@
 							</span>
 						</a>
                     </div>
+                    <style>
+                         .spin {
+            
+            animation: spin 15s linear infinite;
+        }
 
-                    <video src="img/1.mp4" poster="img/poster.png" class="main__video" autoplay="" muted="" loop=""></video>
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+                    </style>
+                    <video src="img/1.mp4" poster="img/poster.png" class="spin main__video" autoplay="" muted="" loop=""></video>
 
                     <div class="main__slides">
                         <div class="main__dots">
